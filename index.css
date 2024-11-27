@@ -1,0 +1,82 @@
+:root {
+    --primary-color: #861b8b;
+    --secondary-color: #e90fc5;
+     --font-color: #333333;   
+    --heading-font-size: 2rem;
+    --body-font-size: 1rem;
+  }
+  
+.one{
+ background-image: url('assets/LandingPage.svg');
+    background-size:cover;
+    /* background-repeat: no-repeat;
+    background-position: center; */
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;    
+}
+.two,.four,.five,.seven{
+    background-image: url('assets/purplebg.svg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+
+}
+
+.three,.six{
+    background-image: url('assets/purplebg.svg');
+    height: 100vh;
+    
+}
+
+.six{
+    align-content: center;
+    align-items: center;
+}
+.twotop,.fourtop,.fivetop,.seventop{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.cards{
+    display: flex;
+    padding: 20px;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+.grid{
+    border:  1px solid red;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    padding: 10px;
+}
+.grid image{
+    border:  1px solid red;
+
+}
+@media (max-width: 768px) {
+   
+    .twotop,.threetop,.fourtop,.fivetop,.seventop{
+        flex-direction: column;
+
+    }
+
+    .cards{
+        flex-direction: column;
+        
+    }
+    .grid{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+}
